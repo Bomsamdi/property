@@ -29,7 +29,13 @@ class Property<T> {
   /// The type of stream value if define by [T]
   Stream<T> get stream => _controller.stream;
 
-  /// Property constructor with initial value of [StreamController]
+  /// Property constructor with initial value of [StreamController].
+  ///
+  /// Example:
+  ///
+  /// ```dart
+  /// Property<int>(0);
+  /// ```
   Property(T initialValue) : _value = initialValue {
     _controller = StreamController.broadcast(
       sync: true,
@@ -39,6 +45,17 @@ class Property<T> {
 }
 
 /// This class is [StreamBuilder] for [Property]
+///
+/// Example:
+///
+/// ```dart
+/// Property<int> property = Property<int>(0);
+/// PropertyBuilder(
+///   property: property,
+///   builder: (context, value) {
+///   return Text(value.toString());
+/// });
+/// ```
 class PropertyBuilder<T> extends StreamBuilder<T> {
   PropertyBuilder({
     super.key,
