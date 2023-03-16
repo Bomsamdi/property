@@ -65,7 +65,6 @@ class PropertyBuilder<T> extends StreamBuilder<T> {
           stream: property.stream,
           initialData: property.value,
           builder: (context, snapshot) {
-            assert(snapshot.hasData);
             assert(!snapshot.hasError);
             return builder(context, snapshot.data);
           },
