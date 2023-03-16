@@ -1,6 +1,6 @@
 name: property
 description: Package for stream property pattern builder is a solution when you need easy support for updating widgets values without setState using streams.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/Bomsamdi/property
 
 environment:
