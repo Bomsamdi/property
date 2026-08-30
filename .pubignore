@@ -1,0 +1,27 @@
+# .pubignore replaces .gitignore for publishing, so the entries below repeat the
+# ones from .gitignore that must stay out of the archive.
+
+# Left over from `flutter create`: this is a pure Dart package, not a plugin,
+# so the platform folders serve no purpose for anyone installing it.
+/android/
+/ios/
+/linux/
+/macos/
+/windows/
+.idea/
+*.iml
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+/pubspec.lock
+**/doc/api/
+.dart_tool/
+.packages
+build/
