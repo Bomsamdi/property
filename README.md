@@ -3,6 +3,7 @@
 [![Pub Version](https://img.shields.io/pub/v/property)](https://pub.dev/packages/property)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![pub points](https://img.shields.io/pub/points/property)](https://pub.dev/packages/property/score)
+[![likes](https://img.shields.io/pub/likes/property)](https://pub.dev/packages/property/score)
 
 An observable value holder. Update widgets without `setState`, rebuilding only
 the part of the tree that reads the value.
